@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Celsius <span class="glyphicon glyphicon-resize-horizontal" style="top:5px;"></span> Fahrenheit Converter</h3>
+        </div>
+        <div class="panel-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Celsius</h4>
+                        <div class="progress">
+                            <div id="celsiusProgress" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                 aria-valuenow="19" aria-valuemin="0" aria-valuemax="100" style="width: 19%;">
+                                <span id="celsiusText">19&deg;C</span>
+                            </div>
+                        </div>
+                        <input type="number" class="form-control" id="celsiusInput" onclick="clearValues()">
+                    </div>
+
+                    <div class="col-md-8">
+                        <h4>Fahrenheit</h4>
+                        <div class="progress">
+                            <div id="fahrenheitProgress"  class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                 aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 31%;">
+                                <span id="fahrenheitText">66&deg;F</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="fahrenheitInput" onclick="clearValues()">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-default" onclick="calculate()" style="margin-left:30px">Calculate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Lenght Converter</h3>
+        </div>
+        <div class="panel-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <select name="unit" class="form-control" id="lenghtFirstSelect" onchange="calculateLenght()">
+                            <option value="mm">mm</option>
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                            <option value="km">km</option>
+                            <option value="feet">feet</option>
+                            <option value="inch">inch</option>
+                            <option value="mile">mile</option>
+                            <option value="yard">yard</option>
+                        </select>
+                        <input type="number" class="form-control" id="lenghtFirstInput" onclick="clearValues()">
+                    </div>
+
+                    <div class="col-md-4">
+                        <select name="unit" class="form-control" id="lenghtSecondSelect" onchange="calculateLenght()">
+                            <option value="mm">mm</option>
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                            <option value="km">km</option>
+                            <option value="feet">feet</option>
+                            <option value="inch">inch</option>
+                            <option value="mile">mile</option>
+                            <option value="yard">yard</option>
+                        </select>
+                        <input type="number" class="form-control" id="lenghtSecondInput" onclick="clearValues()" disabled>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-default" onclick="calculateLenght()" style="margin-left:30px">Calculate</button>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="js.js"></script>
+
+
+</body>
+</html>
