@@ -1,0 +1,6 @@
+body {
+    padding-top: 50px;
+}
+.form-group input[type="number"] {
+    width: 80px;
+}
