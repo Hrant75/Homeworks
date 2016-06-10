@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 10</title>
+    <meta charset="UTF-8">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+<!--<body onload="">-->
+<body onload="drawMatrix()" onkeydown="move(event)">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6" id="matrixContainer">
+            </div>
+
+            <div class="col-md-6">
+                <h3>Please use Arrow Keys to move<br>
+                    or input<br>
+                    "L" for <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span><br>
+                    "R" for <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><br>
+                    "U" for <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span><br>
+                    "D" for <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span><br>
+                    <br> and press Start
+                </h3><br>
+                <input class="input-group" id="myInput">
+                <br>
+                <button class="btn btn-toolbar" onclick="clicked()">Start</button>
+
+                <br><br>
+                <button class="btn btn-toolbar" onclick="reloadpage()">Reload Page</button>
+            </div>
+        </div>
+    </div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
