@@ -1,0 +1,134 @@
+body {
+    padding-top: 70px;
+}
+.text-white{
+    color: white !important;
+}
+.text-black{
+    color:black !important;
+}
+.text-fo{
+    color:#2C3E50 !important;
+}
+.headText{
+    font-size: 3.3em;
+    font-weight: bold;
+}
+.text20{
+    font-size:20px;
+}
+/*----------------------------------------NAVBAR-------------------------------*/
+.navbar-inverse{
+    background-color: #2C3E50 !important;
+}
+.navbar-inverse a{
+    color: #fff !important;
+}
+.navbar-inverse a:hover{
+    color:#18BC9C !important;
+}
+.navbar{
+    min-height: 110px !important;
+}
+.navbar-brand{
+    margin-left: 50px !important;
+    font-size: 2em !important;
+    font-weight: bold;
+}
+.navbar .container-fluid{
+    margin-top: 30px;
+}
+.navbar-right > li > a{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.navbar-right > li:nth-last-of-type(1) > a{
+    margin-right: 70px;
+}
+
+/*-------------------------------HEADER---------------------------------------*/
+header{
+    background-color: #18BC9C;
+    padding: 100px 0;
+}
+.headerFirstText{
+    font-size: 5em;
+    font-weight: bold;
+}
+.headerSeacondText{
+    font-size: 1.8em;
+}
+.iconStar{
+    font-size: 2em;
+}
+.starLine{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    bottom:9px;
+}
+.starLineBorderWhite{
+    border:3px solid white;
+}
+.starLineBorderBlack{
+    border:3px solid black;
+}
+.starLineBorderFo{
+    border:3px solid #2C3E50;
+}
+
+/*------------------------------------PORTFOLIO--------------------------------*/
+.portfolioSection, .aboutSection, .contactSection, .locationSection{
+    padding: 80px 0;
+}
+/*------------------------------------------ABOUT----------------------------------*/
+.aboutSection{
+    background-color: #18BC9C;
+}
+.aboutSection .btnAbout{
+    margin-top: 20px;
+    background-color: #18BC9C;
+    border:2px solid white;
+    color: #2C3E50;
+    padding: 15px 20px;
+    font-size: 1.5em;
+}
+.aboutSection .btnAbout:hover{
+    background-color: white;
+    border-color: white;
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-duration: .5s;
+}
+
+/*----------------------------------------CONTACT----------------------------------------*/
+.contactSection{}
+
+.contactSection input, .contactSection textarea{
+    border:none;
+    font-size: 20px;
+    box-shadow: none;
+}
+.contactSection input:focus, .contactSection textarea:focus{
+    border:none;
+    box-shadow: none;
+}
+.contactSection button{
+    color:white;
+    background-color: #18bc9c;
+    padding:20px 30px;
+}
+.contactSection button:hover{
+    background-color: #128F76;
+    color:white;
+}
+
+/*------------------------------LOCATION-----------------------------------*/
+.locationSection{
+    background-color: #2C3E50;
+}
+
+/*------------------------------FOOTER-----------------------------------*/
+footer {
+    padding: 10px 0;
+    background-color: #233140;
+}
