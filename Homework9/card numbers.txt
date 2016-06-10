@@ -1,0 +1,67 @@
+4355053922391471
+4083060100104286
+375125200070607
+
+            '3528000000000007': 'JCB',
+            '3589000000000003': 'JCB',
+            '3529000000000006': 'JCB',
+
+            '4916338506082832': 'VISA',
+            '4556015886206505': 'VISA',
+            '4539048040151731': 'VISA',
+            '4024007198964305': 'VISA',
+            '4716175187624512': 'VISA',
+
+            '5280934283171080': 'MASTERCARD',
+            '5456060454627409': 'MASTERCARD',
+            '5331113404316994': 'MASTERCARD',
+            '5259474113320034': 'MASTERCARD',
+            '5442179619690834': 'MASTERCARD',
+
+            '6011894492395579': 'DISCOVER',
+            '6011388644154687': 'DISCOVER',
+            '6011880085013612': 'DISCOVER',
+            '6011652795433988': 'DISCOVER',
+            '6011375973328347': 'DISCOVER',
+
+            '345936346788903': 'AMEX',
+            '377669501013152': 'AMEX',
+            '373083634595479': 'AMEX',
+            '370710819865268': 'AMEX',
+            '371095063560404': 'AMEX'
+
+http://stackoverflow.com/questions/72768/how-do-you-detect-credit-card-type-based-on-number
+https://www.cybersource.com/developers/getting_started/test_and_manage/best_practices/card_type_id/
+credit card types by number
+
+
+
+
+
+Credit Card Account Number Verification - Card Type Identification
+
+This page provides information about identifying a credit card type from a card number's numeric range and number of digits.
+
+American Express
+First digit must be a 3 and second digit must be a 4 or 7. Valid length: 15 digits.
+
+Diners Club and Carte Blanche
+First digit must be 3 and second digit must be 0, 6, or 8. Valid length: 14 digits.
+
+Discover
+Valid length: 16 digits. First 8 digits must be in one of the following ranges:
+
+60110000 through 60119999
+65000000 through 65999999
+62212600 through 62292599
+enRoute
+First four digits must be 2014 or 2149. Valid length: 15 digits.
+
+JCB
+First four digits must be 3088, 3096, 3112, 3158, 3337, or the first eight digits must be in the range 35280000 through 35899999. Valid length: 16 digits.
+
+MasterCard
+First digit must be a 5 and second digit must be in the range 1 through 5 inclusive. Valid length: 16 digits.
+
+Visa
+First digit must be a 4. Valid length: 13 or 16 digits.

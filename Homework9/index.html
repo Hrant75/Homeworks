@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Number Validator</title>
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <h4>Please enter some card number to validate with LUHN algorithm</h4>
+    <div class="card">
+        <input type="text" class="frontMec" id="cardNumberInput" oninput="cardCheck()">
+
+        <div class="front" id="frontSide">
+            <!--<div class="frontMec">1234 1234 1234 1234</div>-->
+            <div class="frontData">06/16</div>
+            <div class="frontAnun">HAYRAPETYAN HRANT</div>
+            <span class="frontManr">1234</span>
+            <span class="frontValid">VALID THRU</span>
+            <img src="img/chip.jpg" class="chip">
+            <img src="img/vtb.png" class="vtb">
+            <img src="img/nocard.jpg" class="visa" id="carTypeImage">
+        </div>
+
+        <div class="back"  id="backSide">
+            <div class="poloska"></div>
+            <div class="backText1">AUTORISED SIGNATURE - NOT VALID UNLESS SIGNED</div>
+            <div class="signBox">
+                <img src="img/sign.png" class="sign">
+                <span class="heteviTver">123</span>
+            </div>
+            <img src="img/holo.png" class="holo">
+            <div class="backManrText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Nullam lacinia condimentum viverra.<br>
+                Ut lobortis ante in mi efficitur, a volutpat sem consectetur.<br>
+                Fusce ac viverra nibh. Nunc dapibus tempor arcu, ut mattis metus.<br>
+                Phasellus semper enim ac turpis imperdiet
+            </div>
+            <div class="rightBottomText">NP-UAE - 11111 - 03/12</div>
+            <div class="reversed"></div>
+        </div>
+    </div>
+
+    <div style="margin-top: 700px;">
+        <h3>Card number is: <span id="validOrNotText"></span>
+            . Card Type is <span id="cardTypeText"></span>
+        </h3>
+        <p>Card Nunbers for check</p>
+        <p>4553053922391174<br>
+            4380010600104682<br>
+            375125207000706<br>
+
+            3528000000000007 'JCB',<br>
+            3589000000000003 'JCB',<br>
+            3529000000000006 'JCB',<br>
+            <br>
+            4916338506082832 'VISA',<br>
+            4556015886206505 'VISA',<br>
+            4539048040151731 'VISA',<br>
+            4024007198964305 'VISA',<br>
+            4716175187624512 'VISA',<br>
+            <br>
+            5280934283171080 'MASTERCARD',<br>
+            5456060454627409 'MASTERCARD',<br>
+            5331113404316994 'MASTERCARD',<br>
+            5259474113320034 'MASTERCARD',<br>
+            5442179619690834 'MASTERCARD',<br>
+            <br>
+            6011894492395579 'DISCOVER',<br>
+            6011388644154687 'DISCOVER',<br>
+            6011880085013612 'DISCOVER',<br>
+            6011652795433988 'DISCOVER',<br>
+            6011375973328347 'DISCOVER',<br>
+            <br>
+            345936346788903 'AMEX',<br>
+            377669501013152 'AMEX',<br>
+            373083634595479 'AMEX',<br>
+            370710819865268 'AMEX',<br>
+            371095063560404 'AMEX'
+        </p>
+        <img src="img/Cu7PG.jpg">
+    </div>
+</body>
+</html>
