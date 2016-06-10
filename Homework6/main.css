@@ -1,0 +1,23 @@
+body {
+    padding-top: 70px;
+}
+
+h5{
+    color:gray !important;
+}
+
+.glybox{
+    font-size: 32px;
+    background-color: #e8e8e8;
+    margin: 2px;
+    padding:20px 0;
+}
+.glybox p{
+    font-size: 12px;
+}
+.glybox:hover{
+    color:white;
+    background-color: #563D7C;
+    /*-webkit-filter: invert(90%);*/
+    /*filter:invert(90%);*/
+}
