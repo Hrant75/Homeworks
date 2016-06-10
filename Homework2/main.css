@@ -1,0 +1,247 @@
+body{
+    width:100%;
+    background-color: #f5f5f5;
+}
+
+        /*FORM*/
+
+.contactFormContainer{
+    float:left;
+    width:50%;
+}
+.contactForm{
+    margin: 50px;
+    padding:20px 10px;
+    width: 400px;
+}
+fieldset{
+    background-color: white;
+    border:1px solid lightgray;
+    border-radius: 5px;
+}
+fieldset legend{
+    background-color: white;
+    border:1px solid lightgray;
+    border-radius: 2px;
+    padding: 3px 20px;
+    font-weight: bold;
+  }
+.formRow{
+    clear:both;
+    margin:15px 0;
+}
+.formInput{
+    float:right;
+    margin: 10px 20px 10px 0;
+    height:24px;
+    width: 200px;
+    padding:3px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 0 lightgray;
+    background-color: #f5f5f5;
+    border:1px solid lightgray;
+}
+label{
+    float:left;
+    margin: 10px 0 10px 20px;
+}
+.inputMessage{
+    display:inline-block;
+    float:right;
+    margin: 10px 20px 30px 0;
+    height:48px;
+    width: 202px;
+    padding:3px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px 0 lightgray;
+    background-color: #f5f5f5;
+    border:1px solid lightgray;
+}
+.resetSubmit{
+    clear:both;
+    margin:20px auto;
+    text-align: center;
+}
+input[type="reset"],input[type="submit"]{
+    padding:5px 40px;
+    margin:0 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    color:#f5f5f5;
+    background-color: #414141;
+    box-shadow: 3px 3px 3px 0 lightgray;
+    border:none;
+}
+
+            /*CARD*/
+.card{
+    float:right;
+    width:50%;
+}
+.front, .back{
+    position: relative;
+    width:400px;
+    height: 250px;
+    background-color: #e0e0e0;
+    margin-top: 30px;
+    border-radius: 20px;
+    border:1px solid #e0e0e0;
+}
+
+               /*CARD BACK*/
+.poloska{
+    width:100%;
+    height:60px;
+    background-color: silver;
+    margin-top:20px;
+}
+.backText1{
+    text-transform: uppercase;
+    margin:3px 0 3px 10px;
+    font-size: 12px;
+}
+.signBox{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    background-image: repeating-linear-gradient(
+            white 0px,
+            white 7px,
+            #FFFFAA 7px,
+            #FFFFAA 14px
+    );
+}
+.sign {
+    height: 35px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.heteviTver{
+    position: absolute;
+    top:5px;
+    right: 15px;
+    transform: skewX(20deg);
+}
+
+.holo{
+    float:left;
+    width:60px;
+    height:50px;
+    margin-top:10px;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+.backManrText{
+    font-size: 8px;
+    margin-top:10px;
+    margin-left: 85px;
+}
+.rightBottomText{
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    font-size: 9px;
+}
+.reversed:before{
+    content:"HAYRAPETYAN HRANT";
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(163, 163, 163, 0.50);
+    transform:scaleX(-1);
+    text-shadow:
+    1px 1px 1px rgba(158, 158, 158, 0.50),
+    2px 2px 2px rgba(189, 189, 189, 0.50);
+}
+.reversed:after{
+    content:"1234 1234 1234 1234";
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    font-weight: bold;
+    font-size: 38px;
+    color: rgba(163, 163, 163, 0.50);
+    transform:scaleX(-1);
+    text-shadow:
+    1px 1px 1px rgba(158, 158, 158, 0.50),
+    2px 2px 2px rgba(189, 189, 189, 0.50);
+}
+
+            /*CARD FRONT*/
+.front{
+    z-index: -2;
+}
+.front:after{
+    content:"";
+    position: absolute;
+    background: url('ornament.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.chip{
+    position: absolute;
+    left:30px;
+    top:70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.vtb{
+    position: absolute;
+    right:40px;
+    top:30px;
+    width: 130px;
+}
+.visa{
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    width: 100px;
+}
+.frontMec{
+    position: absolute;
+    bottom: 80px;
+    left: 30px;
+    font-weight: bold;
+    font-size: 38px;
+    color: #a3a3a3;
+}
+.frontAnun{
+    position: absolute;
+    font-weight: bold;
+    font-size: 16px;
+    bottom: 25px;
+    left: 30px;
+    color: rgb(163, 163, 163);
+}
+.frontData{
+    position: absolute;
+    font-weight: bold;
+    font-size: 16px;
+    bottom: 50px;
+    left: 180px;
+    color: #a3a3a3;
+}
+.frontManr{
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    left:35px;
+    bottom:65px;
+}
+.frontValid{
+    position: absolute;
+    font-size: 9px;
+    font-weight: bold;
+    left:145px;
+    bottom:45px;
+    width:20px;
+}
