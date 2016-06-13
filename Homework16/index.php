@@ -8,23 +8,32 @@
 <body>
 
     <?php
-        $myArray = [
-            ['name'=>'Hrant','last'=>'Hayrapetyan_1'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_2'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_3'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_4'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_5'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_6'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_7'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_8'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_9'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_10'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_11'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_12'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_13'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_14'],
-            ['name'=>'Hrant','last'=>'Hayrapetyan_15']
-        ];
+
+                    // if Add pushed then add data into file
+    if (isset($_POST['name']) && isset($_POST['lastname']) && $_POST['name'] != '' && $_POST['lastname'] != ''){
+        echo 'wh have post';
+        $myfile = fopen("array1.txt", "a") or die("Unable to open file!");
+        fwrite($myfile, $_POST['name']." ".$_POST['lastname']."\n");
+        fclose($myfile);
+    }
+
+
+                            //    reading from file to array
+    $myArray = [];
+    $myAssArray = array();
+    $i=0;
+
+    $myfile = fopen("array1.txt", "r") or die("Unable to open file!");
+    while(!feof($myfile)) {
+        $tmp = explode(" ",fgets($myfile));
+        $myAssArray['name'] = $tmp[0];
+        $myAssArray['last'] = $tmp[1];
+        $myArray[$i]=$myAssArray;
+        $i++;
+
+    }
+    fclose($myfile);
+
 
         define("ITEMS_PER_PAGE",4);  //haytararum enq konsant
 
@@ -102,14 +111,15 @@
                 </li>
             </ul>
         </nav>
-        <form class="form-inline">
+        
+        <form class="form-inline" action="index.php" method="post">
             <div class="form-group">
                 <label for="name">First Name</label>
-                <input type="text" class="form-control" id="name" placeholder="First name" name="name">
+                <input type="text" class="form-control" id="name" placeholder="First name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="lastname">Last Name</label>
-                <input type="text" class="form-control" id="lastname" placeholder="Last Name"  name="lastname">
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name"  name="lastname" required>
             </div>
             <button type="submit" class="btn btn-default">Add data</button>
         </form>
