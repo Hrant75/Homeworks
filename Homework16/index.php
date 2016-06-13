@@ -9,6 +9,32 @@
 
     <?php
 
+    // if Delete row
+    if (isset($_POST['delButton'])){
+        $delRow = $_POST['delButton'];
+
+        $myArray = [];
+        $i=0;
+        $myfile = fopen("array1.txt", "r") or die("Unable to open file!");
+        while(!feof($myfile)) {
+            if($i != $delRow) {
+                $myArray[$i] = fgets($myfile);
+            } else {
+                $tmp = fgets($myfile);
+            }
+            $i++;
+        }
+        fclose($myfile);
+
+
+        $myfile = fopen("array1.txt", "w") or die("Unable to open file!");
+        foreach ($myArray as $index){
+            fwrite($myfile, $index);
+        }
+        fclose($myfile);
+
+    }
+
                     // if Add pushed then add data into file
     if (isset($_POST['name']) && isset($_POST['lastname']) && $_POST['name'] != '' && $_POST['lastname'] != ''){
         echo 'wh have post';
@@ -16,7 +42,6 @@
         fwrite($myfile, $_POST['name']." ".$_POST['lastname']."\n");
         fclose($myfile);
     }
-
 
                             //    reading from file to array
     $myArray = [];
@@ -51,25 +76,30 @@
         }
     ?>
     <div class="container">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>First Name</th><th>Last Name</th>
-                </tr>
-            </thead>
-            <tbody>
+        <form action="<?=$_SERVER["PHP_SELF"]?>" method="post">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>First Name</th><th>Last Name</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-            <?php
-                for($i=$start; $i<$start+$limit; $i++){
-                    echo '<tr>';
-                    echo '<td>'.$myArray[$i]["name"].'</td>';
-                    echo '<td>'.$myArray[$i]["last"].'</td>';
-                    echo '</tr>';
-                }
-            ?>
+                <?php
+                    for($i=$start; $i<$start+$limit; $i++){
+                        echo '<tr>';
+                        echo '<td>'.$myArray[$i]["name"].'</td>';
+                        echo '<td>'.$myArray[$i]["last"].'</td>';
+                        echo '<td>
+                                <button type="submit" class="btn btn-default" name="delButton" value="'.$i.'">Delete Row</button>';
+                        echo '</td> </tr>';
+                    }
+                ?>
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </form>
+
         <nav class="text-center">
             <ul class="pagination">
                 <li>
@@ -112,10 +142,10 @@
             </ul>
         </nav>
         
-        <form class="form-inline" action="index.php" method="post">
+        <form class="form-inline" action="<?=$_SERVER["PHP_SELF"]?>" method="post">
             <div class="form-group">
                 <label for="name">First Name</label>
-                <input type="text" class="form-control" id="name" placeholder="First name" name="name" required>
+                <input type="text" class="form-control" id="name" placeholder="First name" name="name" value="sdfsd" required>
             </div>
             <div class="form-group">
                 <label for="lastname">Last Name</label>
@@ -126,8 +156,6 @@
 
 
     </div>
-
-</nav>
 
 </body>
 </html>
