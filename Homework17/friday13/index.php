@@ -35,7 +35,7 @@
                     friday13($_GET['year']);
                 }
                 ?>
-            </div>
+                </div>
             </div>
             <div class="col-md-4">
             </div>
