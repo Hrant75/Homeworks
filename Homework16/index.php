@@ -37,7 +37,6 @@
 
                     // if Add pushed then add data into file
     if (isset($_POST['name']) && isset($_POST['lastname']) && $_POST['name'] != '' && $_POST['lastname'] != ''){
-        echo 'wh have post';
         $myfile = fopen("array1.txt", "a") or die("Unable to open file!");
         fwrite($myfile, $_POST['name']." ".$_POST['lastname']."\n");
         fclose($myfile);
@@ -145,7 +144,7 @@
         <form class="form-inline" action="<?=$_SERVER["PHP_SELF"]?>" method="post">
             <div class="form-group">
                 <label for="name">First Name</label>
-                <input type="text" class="form-control" id="name" placeholder="First name" name="name" value="sdfsd" required>
+                <input type="text" class="form-control" id="name" placeholder="First name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="lastname">Last Name</label>
