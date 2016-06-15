@@ -2,39 +2,7 @@
     <head>
         <title>Calendar</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            .box{
-                float: left;
-                display: inline-block;
-                width: 100px;
-                height: 100px;
-                border: 1px solid #e4e4e4;
-                padding-left: 10px;
-                color: #4d4d4d;
-                font-size: 34px;
-            }
-            .empty{
-                background-color: beige;
-            }
-            .full{
-                background-color: aqua;
-            }
-            .myContainer{
-                width:750px;
-            }
-            .calendarHeaderElements{
-                height: 30px;
-                text-align: center;
-                font-size: 20px;
-            }
-            .clearfix:after {
-                content: " ";
-                display: block;
-                width: 100%;
-                height: 0;
-                clear: both;
-            }
-        </style>
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <?php
