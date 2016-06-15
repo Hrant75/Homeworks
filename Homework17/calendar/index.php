@@ -10,7 +10,7 @@
                 height: 100px;
                 border: 1px solid #e4e4e4;
                 padding-left: 10px;
-                color: #1c1c1c;
+                color: #4d4d4d;
                 font-size: 34px;
             }
             .empty{
@@ -22,11 +22,24 @@
             .myContainer{
                 width:750px;
             }
+            .calendarHeaderElements{
+                height: 30px;
+                text-align: center;
+                font-size: 20px;
+            }
+            .clearfix:after {
+                content: " ";
+                display: block;
+                width: 100%;
+                height: 0;
+                clear: both;
+            }
         </style>
     </head>
     <body>
         <?php
-            if(isset($_GET['year']) && isset($_GET['month'])){
+            if( isset($_GET['year']) && isset($_GET['month']) && ($_GET['year'] > 0 && $_GET['year'] < 9999)
+                && ($_GET['month'] > 0 && $_GET['month'] < 13) ){
                 $currentYear = $_GET['year'];
                 $currentMonth = $_GET['month'];
 
@@ -36,10 +49,8 @@
             }
 
             $mk = mktime(0,0,0,$currentMonth, 1, $currentYear);
-            $currentTime = date("d-m-Y", $mk);
-            $firstDay = date("N",$mk);
             $daysOfMonth = date("t",$mk);
-            $emptyCells = $firstDay - 1;
+            $emptyCells = date("N",$mk) - 1;
             $fullUp = ceil( ($emptyCells + $daysOfMonth)/7 )*7-($emptyCells + $daysOfMonth);
         ?>
 
@@ -61,7 +72,15 @@
                 </div>
                 <div class="col-md-10">
                     <div class="myContainer">
-                        <?php
+                        <div class="clearfix">
+                            <?php
+                            $weekDays = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun");
+                            foreach ($weekDays as $wDay){
+                                    echo '<div class="box calendarHeaderElements">';
+                                    echo $wDay;
+                                    echo '</div>';
+                                }
+                        echo '</div><br>';
 
                             for($i=0; $i<$emptyCells; $i++){
                                 echo '<div class="box empty">';
@@ -82,6 +101,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </body>
 </html>
 
