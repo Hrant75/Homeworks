@@ -9,7 +9,9 @@
                 width: 100px;
                 height: 100px;
                 border: 1px solid #e4e4e4;
-                text-align: center;
+                padding-left: 10px;
+                color: #1c1c1c;
+                font-size: 34px;
             }
             .empty{
                 background-color: beige;
@@ -38,6 +40,7 @@
             $firstDay = date("N",$mk);
             $daysOfMonth = date("t",$mk);
             $emptyCells = $firstDay - 1;
+            $fullUp = ceil( ($emptyCells + $daysOfMonth)/7 )*7-($emptyCells + $daysOfMonth);
         ?>
 
         <div class="container">
@@ -68,6 +71,11 @@
                             for($i=0; $i<$daysOfMonth; $i++){
                                 echo '<div class="box full">';
                                 echo $i+1;
+                                echo '</div>';
+                            }
+
+                            for($i=0; $i<$fullUp; $i++){
+                                echo '<div class="box empty">';
                                 echo '</div>';
                             }
                         ?>
