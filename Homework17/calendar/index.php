@@ -38,10 +38,6 @@
             $firstDay = date("N",$mk);
             $daysOfMonth = date("t",$mk);
             $emptyCells = $firstDay - 1;
-//            $fullUp = ceil(($emptyCells + $daysOfMonth)/7)*7-($emptyCells + $daysOfMonth);
-//        echo $fullUp;
-//            echo 'if true '.$currentYear.' '.$currentMonth.'<br>';
-//            echo $currentTime.' first day '.$firstDay.' empty cells '.$emptyCells.' day of month '.$daysOfMonth.'<br>';
         ?>
 
         <div class="container">
