@@ -59,7 +59,6 @@
             $i++;
         }
     }
-//    array_pop($myArray);
     fclose($myfile);
 
 
