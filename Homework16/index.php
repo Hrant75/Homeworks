@@ -5,7 +5,7 @@
     <title>Table and Pagination with PHP</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body style="padding-top: 30px">
 
     <?php
 
@@ -48,14 +48,18 @@
     $i=0;
 
     $myfile = fopen("array1.txt", "r") or die("Unable to open file!");
+
     while(!feof($myfile)) {
         $tmp = explode(" ",fgets($myfile));
-        $myAssArray['name'] = $tmp[0];
-        $myAssArray['last'] = $tmp[1];
-        $myArray[$i]=$myAssArray;
-        $i++;
 
+        if($tmp[0] != NULL ) {
+            $myAssArray['name'] = $tmp[0];
+            $myAssArray['last'] = $tmp[1];
+            $myArray[$i] = $myAssArray;
+            $i++;
+        }
     }
+//    array_pop($myArray);
     fclose($myfile);
 
 
@@ -64,6 +68,9 @@
         $currentPage = 1;
         if(isset($_GET['page'])){
             $currentPage = $_GET['page'];
+        }
+        if(isset($_POST['page'])){
+            $currentPage = $_POST['page'];
         }
         $totalPageCount = ceil(count($myArray) / ITEMS_PER_PAGE);
 
@@ -89,7 +96,13 @@
                         echo '<tr>';
                         echo '<td>'.$myArray[$i]["name"].'</td>';
                         echo '<td>'.$myArray[$i]["last"].'</td>';
-                        echo '<td>
+                        echo '<input type="hidden" name="page" value="';
+                        if(count($myArray)%ITEMS_PER_PAGE == 1){
+                            echo $currentPage-1;
+                        }else {
+                            echo $currentPage;
+                        };
+                        echo '"> <td>
                                 <button type="submit" class="btn btn-default" name="delButton" value="'.$i.'">Delete Row</button>';
                         echo '</td> </tr>';
                     }
@@ -142,6 +155,14 @@
         </nav>
         
         <form class="form-inline" action="<?=$_SERVER["PHP_SELF"]?>" method="post">
+            <?php
+            echo '<input type="hidden" name="page" value="';
+            if(count($myArray)%ITEMS_PER_PAGE == 0){
+                echo $currentPage+1;
+            }else {
+                echo $currentPage;
+            }
+            echo '">';?>
             <div class="form-group">
                 <label for="name">First Name</label>
                 <input type="text" class="form-control" id="name" placeholder="First name" name="name" required>
