@@ -1,0 +1,8 @@
+Hrant | Hayrapetyan | PHP
+Karen | Hayrapetyan | HTML
+Hrant | Manukyan | JS
+Tigran | Arakelyan | C++
+Pogos | Karapetyan | HTML
+Petros | Manukyan | PHP
+Aram | Knyazyan | HTML
+Armen | Hayrapetyan | PHP

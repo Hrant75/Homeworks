@@ -1,0 +1,10 @@
+body {
+    padding-top: 30px
+}
+.box{
+    height: 100px;
+}
+
+.modal .modal-dialog .modal-content{
+    padding: 20px;
+}
