@@ -1,0 +1,16 @@
+body{
+    padding-top: 50px;
+}
+
+li{
+    display: inline;
+    text-decoration: none;
+}
+
+#addModal .modal-content{
+    padding: 50px;
+}
+
+.nameAlert, .lastAlert, .emailAlert, .phoneAlert, .urlAlert, .courseNameAlert{
+    display: none;
+}
