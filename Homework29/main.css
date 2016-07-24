@@ -1,0 +1,16 @@
+body{
+    padding-top: 50px;
+}
+
+li{
+    display: inline;
+    text-decoration: none;
+}
+
+#addModal .modal-content, #updateModal .modal-content{
+    padding: 50px;
+}
+
+.titleAlert, .searchAlert, .authorNameAlert, .categoryNameAlert{
+    display: none;
+}
