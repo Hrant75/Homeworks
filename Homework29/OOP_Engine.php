@@ -56,6 +56,9 @@ if(isset($_POST['add'])){
         if ( (count($categoryModel->getCategories()) % ITEMS_PER_PAGE) == 0) $currentPage++;
         $pageType = 'categories';
         $categoryName = $_POST['addCategory'];
+        if(isset($_POST['addID'])){
+            $categoryRow->setId($_POST['addID']);
+        }
         $categoryRow->setCategory($categoryName);
         $categoryModel->saveCategory($categoryRow);
     }

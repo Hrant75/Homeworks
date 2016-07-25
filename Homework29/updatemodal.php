@@ -7,11 +7,15 @@
                     echo '
                         <div class="form-group">
                             <label for="updateRow">Row #</label>
-                            <input type="number" class="btn btn-warning" min="1" id="updateRow" name="updateRow" oninput="changeValues()" required>
+                            <input type="number" class="btn btn-warning" value = "1" min="1" id="updateRow" name="updateRow" oninput="changeCategoryValue()" required>
                         </div>
                             <div class="form-group">
+                                <label for="updateID">ID</label>
+                                <input type="hidden" class="form-control" id="updateID" name="addID" >
+                            </div>
+                            <div class="form-group">
                                 <label for="updateCategory">Category</label>
-                                <input type="text" class="form-control" id="updateCategory" name="updateCategory"  required>
+                                <input type="text" class="form-control" id="updateCategory" name="addCategory"  required>
                             </div>';
 
                 } else if($pageType=='news') {
@@ -45,7 +49,7 @@
                 }
                 echo '
                         <input type="hidden" name="currentPage" value='.$currentPage.'>
-                        <button type="submit" id="updateButton" class="btn btn-default" name="update" value='.$pageType.'>Update</button>';
+                        <button type="submit" id="updateButton" class="btn btn-default" name="add" value='.$pageType.'>Update</button>';
                ?>
             </form>
 
@@ -81,17 +85,54 @@
 
 <script type='text/javascript'>
 <?php
-    $js_news = json_encode($data);
-    echo "var js_news = ". $js_news . ";\n";
-    ?>
-    document.getElementById('updateRow').setAttribute('max', js_news.length);
-    function  changeValues() {
-        var row = document.getElementById('updateRow').value-1;
-        document.getElementById('updateButton').value = js_news[row]['id'];
-//        document.getElementById('updateTitle').value = js_news[row]['title'];
-//        document.getElementById('updateContent').value = js_news[row]['content'];
-        document.getElementById('updateCategory').value = js_news[row]['category'];
+    if($pageType=='categories') {
+        $js_news = json_encode($categories->getCategoriesAsArray());
+        echo "var js_news = ". $js_news . ";\n";
+        ?>
+        document.getElementById('updateRow').setAttribute('max', js_news.length );
+        function  changeCategoryValue() {
+            var row = document.getElementById('updateRow').value - 1;
+//            console.log(js_news[row]);
+            document.getElementById('updateID').value = js_news[row]['id'];
+            document.getElementById('updateCategory').value = js_news[row]['category'];
+        }
+<?php
     }
+?>
+
+//        function  changeCategoryValue() {
+//            var row = document.getElementById('updateRow').value-1;
+//            console_log(row);
+//            var js_categories = <?php
+//                foreach ($data as $item){
+//                    echo '['.$item->getId().', "';
+//                    echo $item->getCategory().'"],';
+//                }
+//                ?>//;
+////            document.getElementById('category').value = <?////= data->getCategoryNameByID()?>////;
+//        }
+<!--        --><?php
+
+
+//        <?php
+//        $js_students = json_encode($students);
+//        echo "var js_students = ". $js_students . ";\n";
+//        ?>
+//        echo count($data);
+//        print_r($data);
+//        echo '<br>';
+//        var_dump($data);
+//        echo '<br>';
+//    }
+//    ?>
+//    document.getElementById('updateRow').setAttribute('max', js_news.length);
+//    function  changeValues() {
+//        var row = document.getElementById('updateRow').value-1;
+//        document.getElementById('updateButton').value = js_news[row]['id'];
+////        document.getElementById('updateTitle').value = js_news[row]['title'];
+////        document.getElementById('updateContent').value = js_news[row]['content'];
+//        document.getElementById('updateCategory').value = js_news[row]['category'];
+//    }
 //    function  changeCategoryValue() {
 //        var row = document.getElementById('updateRow').value-1;
 //        document.getElementById('category').value = js_news[row]['category'];

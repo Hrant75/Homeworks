@@ -30,7 +30,17 @@ class CategoryModel
         }
         return $categories;
     }
-        
+
+    public function getCategoriesAsArray()
+    {
+        $statement = $this->dbConnection->getConnection()->prepare("SELECT id, category FROM categories ORDER BY id ASC");
+        $statement->execute();
+        $statement->setFetchMode(PDO::FETCH_ASSOC);
+
+        $result = $statement->fetchAll();
+        return $result;
+    }
+
     public function getCategoryNameByID($id)  
     {
         $statement = $this->dbConnection->getConnection()->prepare("SELECT id, category FROM categories WHERE id=".$id);
@@ -58,7 +68,7 @@ class CategoryModel
             $statement->execute();
         } else {
             // update enq anum
-            $sql = "UPDATE categories SET category='".$category->getCategory()."' WHERE id=".getID();
+            $sql = "UPDATE categories SET category='".$category->getCategory()."' WHERE id=".$category->getId();
             $statement = $this->dbConnection->getConnection()->prepare($sql);
             $statement->execute();
         }
