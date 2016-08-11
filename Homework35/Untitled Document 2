@@ -1,0 +1,348 @@
+Array
+(
+    [0] => stdClass Object
+        (
+            [url] => https://api.github.com/gists/7f947bb10def796fae6b7d08afe2bbfd
+            [forks_url] => https://api.github.com/gists/7f947bb10def796fae6b7d08afe2bbfd/forks
+            [commits_url] => https://api.github.com/gists/7f947bb10def796fae6b7d08afe2bbfd/commits
+            [id] => 7f947bb10def796fae6b7d08afe2bbfd
+            [git_pull_url] => https://gist.github.com/7f947bb10def796fae6b7d08afe2bbfd.git
+            [git_push_url] => https://gist.github.com/7f947bb10def796fae6b7d08afe2bbfd.git
+            [html_url] => https://gist.github.com/7f947bb10def796fae6b7d08afe2bbfd
+            [files] => stdClass Object
+                (
+                    [Application\Service\MemcachedStorageFactory.php] => stdClass Object
+                        (
+                            [filename] => Application\Service\MemcachedStorageFactory.php
+                            [type] => application/x-httpd-php
+                            [language] => PHP
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/7f947bb10def796fae6b7d08afe2bbfd/raw/508696b8e9a41c116a38f9c50bb2bb40b8762d58/Application%5CService%5CMemcachedStorageFactory.php
+                            [size] => 1139
+                        )
+
+                    [Application\config\module.config.php] => stdClass Object
+                        (
+                            [filename] => Application\config\module.config.php
+                            [type] => application/x-httpd-php
+                            [language] => PHP
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/7f947bb10def796fae6b7d08afe2bbfd/raw/919c1aa772544fc4e42c25af873647f90f4ee5d2/Application%5Cconfig%5Cmodule.config.php
+                            [size] => 272
+                        )
+
+                    [Module.php] => stdClass Object
+                        (
+                            [filename] => Module.php
+                            [type] => application/x-httpd-php
+                            [language] => PHP
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/7f947bb10def796fae6b7d08afe2bbfd/raw/8eb618ea3ce81f47659675b3c11de7b3b8eb0ca0/Module.php
+                            [size] => 2144
+                        )
+
+                    [memcached.local.php] => stdClass Object
+                        (
+                            [filename] => memcached.local.php
+                            [type] => application/x-httpd-php
+                            [language] => PHP
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/7f947bb10def796fae6b7d08afe2bbfd/raw/b0acdb8fab713d5d6fdac4e6606d500dd85cba59/memcached.local.php
+                            [size] => 1343
+                        )
+
+                )
+
+            [public] => 1
+            [created_at] => 2016-08-03T09:48:18Z
+            [updated_at] => 2016-08-03T09:48:18Z
+            [description] => Zend Framework 2  - Session Memcached Configuration with Failover
+            [comments] => 0
+            [user] => 
+            [comments_url] => https://api.github.com/gists/7f947bb10def796fae6b7d08afe2bbfd/comments
+            [owner] => stdClass Object
+                (
+                    [login] => tigranmaestro
+                    [id] => 5087657
+                    [avatar_url] => https://avatars.githubusercontent.com/u/5087657?v=3
+                    [gravatar_id] => 
+                    [url] => https://api.github.com/users/tigranmaestro
+                    [html_url] => https://github.com/tigranmaestro
+                    [followers_url] => https://api.github.com/users/tigranmaestro/followers
+                    [following_url] => https://api.github.com/users/tigranmaestro/following{/other_user}
+                    [gists_url] => https://api.github.com/users/tigranmaestro/gists{/gist_id}
+                    [starred_url] => https://api.github.com/users/tigranmaestro/starred{/owner}{/repo}
+                    [subscriptions_url] => https://api.github.com/users/tigranmaestro/subscriptions
+                    [organizations_url] => https://api.github.com/users/tigranmaestro/orgs
+                    [repos_url] => https://api.github.com/users/tigranmaestro/repos
+                    [events_url] => https://api.github.com/users/tigranmaestro/events{/privacy}
+                    [received_events_url] => https://api.github.com/users/tigranmaestro/received_events
+                    [type] => User
+                    [site_admin] => 
+                )
+
+            [truncated] => 
+        )
+
+    [1] => stdClass Object
+        (
+            [url] => https://api.github.com/gists/23e55d01886cde2c13251a0cbae7abc3
+            [forks_url] => https://api.github.com/gists/23e55d01886cde2c13251a0cbae7abc3/forks
+            [commits_url] => https://api.github.com/gists/23e55d01886cde2c13251a0cbae7abc3/commits
+            [id] => 23e55d01886cde2c13251a0cbae7abc3
+            [git_pull_url] => https://gist.github.com/23e55d01886cde2c13251a0cbae7abc3.git
+            [git_push_url] => https://gist.github.com/23e55d01886cde2c13251a0cbae7abc3.git
+            [html_url] => https://gist.github.com/23e55d01886cde2c13251a0cbae7abc3
+            [files] => stdClass Object
+                (
+                    [Complex-Zend-2-Select-Query.php] => stdClass Object
+                        (
+                            [filename] => Complex-Zend-2-Select-Query.php
+                            [type] => application/x-httpd-php
+                            [language] => PHP
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/23e55d01886cde2c13251a0cbae7abc3/raw/85669a255d706a7dad5aa8e21e9dafa6a49e7fb9/Complex-Zend-2-Select-Query.php
+                            [size] => 3972
+                        )
+
+                )
+
+            [public] => 1
+            [created_at] => 2016-08-02T11:45:57Z
+            [updated_at] => 2016-08-02T11:46:56Z
+            [description] => Complex Zend 2 Select Query
+            [comments] => 0
+            [user] => 
+            [comments_url] => https://api.github.com/gists/23e55d01886cde2c13251a0cbae7abc3/comments
+            [owner] => stdClass Object
+                (
+                    [login] => tigranmaestro
+                    [id] => 5087657
+                    [avatar_url] => https://avatars.githubusercontent.com/u/5087657?v=3
+                    [gravatar_id] => 
+                    [url] => https://api.github.com/users/tigranmaestro
+                    [html_url] => https://github.com/tigranmaestro
+                    [followers_url] => https://api.github.com/users/tigranmaestro/followers
+                    [following_url] => https://api.github.com/users/tigranmaestro/following{/other_user}
+                    [gists_url] => https://api.github.com/users/tigranmaestro/gists{/gist_id}
+                    [starred_url] => https://api.github.com/users/tigranmaestro/starred{/owner}{/repo}
+                    [subscriptions_url] => https://api.github.com/users/tigranmaestro/subscriptions
+                    [organizations_url] => https://api.github.com/users/tigranmaestro/orgs
+                    [repos_url] => https://api.github.com/users/tigranmaestro/repos
+                    [events_url] => https://api.github.com/users/tigranmaestro/events{/privacy}
+                    [received_events_url] => https://api.github.com/users/tigranmaestro/received_events
+                    [type] => User
+                    [site_admin] => 
+                )
+
+            [truncated] => 
+        )
+
+    [2] => stdClass Object
+        (
+            [url] => https://api.github.com/gists/ac5099b2082f72d241080df95972c576
+            [forks_url] => https://api.github.com/gists/ac5099b2082f72d241080df95972c576/forks
+            [commits_url] => https://api.github.com/gists/ac5099b2082f72d241080df95972c576/commits
+            [id] => ac5099b2082f72d241080df95972c576
+            [git_pull_url] => https://gist.github.com/ac5099b2082f72d241080df95972c576.git
+            [git_push_url] => https://gist.github.com/ac5099b2082f72d241080df95972c576.git
+            [html_url] => https://gist.github.com/ac5099b2082f72d241080df95972c576
+            [files] => stdClass Object
+                (
+                    [composer.sh] => stdClass Object
+                        (
+                            [filename] => composer.sh
+                            [type] => application/x-sh
+                            [language] => Shell
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/ac5099b2082f72d241080df95972c576/raw/7482171b47e2674dac5758d0659a2189413a1acb/composer.sh
+                            [size] => 498
+                        )
+
+                )
+
+            [public] => 1
+            [created_at] => 2016-07-27T09:30:39Z
+            [updated_at] => 2016-07-27T09:30:39Z
+            [description] => How To Install and Use Composer on Ubuntu 14.04
+            [comments] => 0
+            [user] => 
+            [comments_url] => https://api.github.com/gists/ac5099b2082f72d241080df95972c576/comments
+            [owner] => stdClass Object
+                (
+                    [login] => tigranmaestro
+                    [id] => 5087657
+                    [avatar_url] => https://avatars.githubusercontent.com/u/5087657?v=3
+                    [gravatar_id] => 
+                    [url] => https://api.github.com/users/tigranmaestro
+                    [html_url] => https://github.com/tigranmaestro
+                    [followers_url] => https://api.github.com/users/tigranmaestro/followers
+                    [following_url] => https://api.github.com/users/tigranmaestro/following{/other_user}
+                    [gists_url] => https://api.github.com/users/tigranmaestro/gists{/gist_id}
+                    [starred_url] => https://api.github.com/users/tigranmaestro/starred{/owner}{/repo}
+                    [subscriptions_url] => https://api.github.com/users/tigranmaestro/subscriptions
+                    [organizations_url] => https://api.github.com/users/tigranmaestro/orgs
+                    [repos_url] => https://api.github.com/users/tigranmaestro/repos
+                    [events_url] => https://api.github.com/users/tigranmaestro/events{/privacy}
+                    [received_events_url] => https://api.github.com/users/tigranmaestro/received_events
+                    [type] => User
+                    [site_admin] => 
+                )
+
+            [truncated] => 
+        )
+
+    [3] => stdClass Object
+        (
+            [url] => https://api.github.com/gists/21b07d54375bdbbe30f359ab1f7346b4
+            [forks_url] => https://api.github.com/gists/21b07d54375bdbbe30f359ab1f7346b4/forks
+            [commits_url] => https://api.github.com/gists/21b07d54375bdbbe30f359ab1f7346b4/commits
+            [id] => 21b07d54375bdbbe30f359ab1f7346b4
+            [git_pull_url] => https://gist.github.com/21b07d54375bdbbe30f359ab1f7346b4.git
+            [git_push_url] => https://gist.github.com/21b07d54375bdbbe30f359ab1f7346b4.git
+            [html_url] => https://gist.github.com/21b07d54375bdbbe30f359ab1f7346b4
+            [files] => stdClass Object
+                (
+                    [Module.php] => stdClass Object
+                        (
+                            [filename] => Module.php
+                            [type] => application/x-httpd-php
+                            [language] => PHP
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/21b07d54375bdbbe30f359ab1f7346b4/raw/1a9ce75be8e796c075358c63657fd03d639be493/Module.php
+                            [size] => 1725
+                        )
+
+                )
+
+            [public] => 1
+            [created_at] => 2016-07-27T09:23:52Z
+            [updated_at] => 2016-07-27T09:27:16Z
+            [description] => Alternative naming for  New Relic - Zend Framework 2(3) transactions
+            [comments] => 0
+            [user] => 
+            [comments_url] => https://api.github.com/gists/21b07d54375bdbbe30f359ab1f7346b4/comments
+            [owner] => stdClass Object
+                (
+                    [login] => tigranmaestro
+                    [id] => 5087657
+                    [avatar_url] => https://avatars.githubusercontent.com/u/5087657?v=3
+                    [gravatar_id] => 
+                    [url] => https://api.github.com/users/tigranmaestro
+                    [html_url] => https://github.com/tigranmaestro
+                    [followers_url] => https://api.github.com/users/tigranmaestro/followers
+                    [following_url] => https://api.github.com/users/tigranmaestro/following{/other_user}
+                    [gists_url] => https://api.github.com/users/tigranmaestro/gists{/gist_id}
+                    [starred_url] => https://api.github.com/users/tigranmaestro/starred{/owner}{/repo}
+                    [subscriptions_url] => https://api.github.com/users/tigranmaestro/subscriptions
+                    [organizations_url] => https://api.github.com/users/tigranmaestro/orgs
+                    [repos_url] => https://api.github.com/users/tigranmaestro/repos
+                    [events_url] => https://api.github.com/users/tigranmaestro/events{/privacy}
+                    [received_events_url] => https://api.github.com/users/tigranmaestro/received_events
+                    [type] => User
+                    [site_admin] => 
+                )
+
+            [truncated] => 
+        )
+
+    [4] => stdClass Object
+        (
+            [url] => https://api.github.com/gists/d4538e01e187deeb01e8778bc8eb5663
+            [forks_url] => https://api.github.com/gists/d4538e01e187deeb01e8778bc8eb5663/forks
+            [commits_url] => https://api.github.com/gists/d4538e01e187deeb01e8778bc8eb5663/commits
+            [id] => d4538e01e187deeb01e8778bc8eb5663
+            [git_pull_url] => https://gist.github.com/d4538e01e187deeb01e8778bc8eb5663.git
+            [git_push_url] => https://gist.github.com/d4538e01e187deeb01e8778bc8eb5663.git
+            [html_url] => https://gist.github.com/d4538e01e187deeb01e8778bc8eb5663
+            [files] => stdClass Object
+                (
+                    [Keywords.php] => stdClass Object
+                        (
+                            [filename] => Keywords.php
+                            [type] => application/x-httpd-php
+                            [language] => PHP
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/d4538e01e187deeb01e8778bc8eb5663/raw/4c7d3ef99136d322146554ecfecd2582d7c98ee8/Keywords.php
+                            [size] => 1383
+                        )
+
+                )
+
+            [public] => 1
+            [created_at] => 2016-07-13T17:12:42Z
+            [updated_at] => 2016-07-13T17:12:42Z
+            [description] => 
+            [comments] => 0
+            [user] => 
+            [comments_url] => https://api.github.com/gists/d4538e01e187deeb01e8778bc8eb5663/comments
+            [owner] => stdClass Object
+                (
+                    [login] => tigranmaestro
+                    [id] => 5087657
+                    [avatar_url] => https://avatars.githubusercontent.com/u/5087657?v=3
+                    [gravatar_id] => 
+                    [url] => https://api.github.com/users/tigranmaestro
+                    [html_url] => https://github.com/tigranmaestro
+                    [followers_url] => https://api.github.com/users/tigranmaestro/followers
+                    [following_url] => https://api.github.com/users/tigranmaestro/following{/other_user}
+                    [gists_url] => https://api.github.com/users/tigranmaestro/gists{/gist_id}
+                    [starred_url] => https://api.github.com/users/tigranmaestro/starred{/owner}{/repo}
+                    [subscriptions_url] => https://api.github.com/users/tigranmaestro/subscriptions
+                    [organizations_url] => https://api.github.com/users/tigranmaestro/orgs
+                    [repos_url] => https://api.github.com/users/tigranmaestro/repos
+                    [events_url] => https://api.github.com/users/tigranmaestro/events{/privacy}
+                    [received_events_url] => https://api.github.com/users/tigranmaestro/received_events
+                    [type] => User
+                    [site_admin] => 
+                )
+
+            [truncated] => 
+        )
+
+    [5] => stdClass Object
+        (
+            [url] => https://api.github.com/gists/089c6001808fa51f43086184d8a1a092
+            [forks_url] => https://api.github.com/gists/089c6001808fa51f43086184d8a1a092/forks
+            [commits_url] => https://api.github.com/gists/089c6001808fa51f43086184d8a1a092/commits
+            [id] => 089c6001808fa51f43086184d8a1a092
+            [git_pull_url] => https://gist.github.com/089c6001808fa51f43086184d8a1a092.git
+            [git_push_url] => https://gist.github.com/089c6001808fa51f43086184d8a1a092.git
+            [html_url] => https://gist.github.com/089c6001808fa51f43086184d8a1a092
+            [files] => stdClass Object
+                (
+                    [correct-file-permissions-for-wordpress.sh] => stdClass Object
+                        (
+                            [filename] => correct-file-permissions-for-wordpress.sh
+                            [type] => application/x-sh
+                            [language] => Shell
+                            [raw_url] => https://gist.githubusercontent.com/tigranmaestro/089c6001808fa51f43086184d8a1a092/raw/25972a3060f1cbbdedd30c785e05d38d0dd6ae3c/correct-file-permissions-for-wordpress.sh
+                            [size] => 290
+                        )
+
+                )
+
+            [public] => 1
+            [created_at] => 2016-05-17T17:42:57Z
+            [updated_at] => 2016-07-27T09:34:01Z
+            [description] => Correct File Permissions for Wordpress
+            [comments] => 0
+            [user] => 
+            [comments_url] => https://api.github.com/gists/089c6001808fa51f43086184d8a1a092/comments
+            [owner] => stdClass Object
+                (
+                    [login] => tigranmaestro
+                    [id] => 5087657
+                    [avatar_url] => https://avatars.githubusercontent.com/u/5087657?v=3
+                    [gravatar_id] => 
+                    [url] => https://api.github.com/users/tigranmaestro
+                    [html_url] => https://github.com/tigranmaestro
+                    [followers_url] => https://api.github.com/users/tigranmaestro/followers
+                    [following_url] => https://api.github.com/users/tigranmaestro/following{/other_user}
+                    [gists_url] => https://api.github.com/users/tigranmaestro/gists{/gist_id}
+                    [starred_url] => https://api.github.com/users/tigranmaestro/starred{/owner}{/repo}
+                    [subscriptions_url] => https://api.github.com/users/tigranmaestro/subscriptions
+                    [organizations_url] => https://api.github.com/users/tigranmaestro/orgs
+                    [repos_url] => https://api.github.com/users/tigranmaestro/repos
+                    [events_url] => https://api.github.com/users/tigranmaestro/events{/privacy}
+                    [received_events_url] => https://api.github.com/users/tigranmaestro/received_events
+                    [type] => User
+                    [site_admin] => 
+                )
+
+            [truncated] => 
+        )
+
+)
