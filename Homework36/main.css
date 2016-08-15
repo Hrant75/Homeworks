@@ -1,0 +1,74 @@
+.created{
+    font-size: 11px;
+    color: #999;
+}
+
+.anunMec{
+    font-size:2em;
+    color: black;
+}
+
+.notes{
+    width:200px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ .note{
+    display: block;
+}
+
+input[type="radio"]:checked ~ label{
+    background-color: #3fbc6c;
+    color: whitesmoke;
+}
+input[type="radio"]:checked ~ label a span, .notes label:hover a span {
+    color: black;
+}
+
+.notes label:hover  {
+    font-weight: bold;
+    background-color: #48dd82;
+}
+
+label {
+    position: relative;
+}
+.notes label > a {
+    position: absolute;
+    bottom: 10px;
+    left: 170px;
+    font-size: 1.5em;
+    display: none;
+}
+
+.notes label:hover > a {
+    display: block;
+}
+
+.form-group{
+    position: relative;
+}
+
+.note  {
+    display: none;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    z-index: -1;
+}
+
+.notes label {
+    width: 200px;
+    height: 100px;
+    background-color: #f8f8f8;
+    border:1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#addModal .modal-content{
+    padding: 30px;
+}
