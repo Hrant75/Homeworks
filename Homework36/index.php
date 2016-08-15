@@ -14,7 +14,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>simple-usage-of-github-gists-api-using-guzzle</title>
+    <title>add and delete Evernote notes</title>
     <link href="main.css" rel="stylesheet">
 <!--    <link href="bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -51,7 +51,7 @@
         if(isset($_POST['add'])){
             $note         = new \Evernote\Model\Note();
             $note->title  = $_POST['title'];
-            $note->content = new \Evernote\Model\PlainTextNoteContent($_POST['content']);
+            $note->setContent($_POST['content']);
             $client->uploadNote($note);
         }
 
@@ -67,6 +67,9 @@
         $notes = [];
         foreach ($results as $result){
             $note = $client->getNote($result->guid);
+//            echo '<pre>';
+//            print_r($note);
+//            echo '</pre> <br>';
             $notes[] = array('guid'=>$note->guid, 'title'=>$note->title, 'content'=>$note->content,
                 'created'=>$note->created, 'notebookGuide'=>$note->notebookGuid );
         }

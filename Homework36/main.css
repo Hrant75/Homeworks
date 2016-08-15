@@ -28,9 +28,14 @@ input[type="radio"]:checked ~ label a span, .notes label:hover a span {
     color: black;
 }
 
+input[type="radio"]:checked ~ label span, .notes label:hover span {
+    color: whitesmoke;
+}
+
 .notes label:hover  {
     font-weight: bold;
     background-color: #48dd82;
+    color:whitesmoke;
 }
 
 label {
@@ -55,8 +60,8 @@ label {
 .note  {
     display: none;
     position: absolute;
-    left: 150px;
-    top: 0;
+    left: 270px;
+    top: 20;
     z-index: -1;
 }
 
