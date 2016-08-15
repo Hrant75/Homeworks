@@ -51,7 +51,7 @@
         if(isset($_POST['add'])){
             $note         = new \Evernote\Model\Note();
             $note->title  = $_POST['title'];
-            $note->setContent($_POST['content']);
+            $note->content = $_POST['content'];
             $client->uploadNote($note);
         }
 
@@ -135,4 +135,6 @@ function time_elapsed_string($ptime)
         }
     }
 }
+
+
 ?>
