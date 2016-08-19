@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>add and delete Evernote notes</title>
+    <title>cron sending emails from DB</title>
     <link href="main.css" rel="stylesheet">
     <!--    <link href="bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
