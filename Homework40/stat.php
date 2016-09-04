@@ -10,7 +10,7 @@
 
 include_once 'db.php';
 
-$sql = "SELECT ip, country FROM countryip_stat ORDER BY id DESC LIMIT 10";
+$sql = "SELECT ip, country, time FROM countryip_stat ORDER BY id DESC LIMIT 10";
 $statement = $conn->prepare($sql);
 $statement->execute();
 $statement->setFetchMode(PDO::FETCH_ASSOC);
@@ -21,12 +21,14 @@ echo '<div class="container"><h2>last 10 visits</h2><br><table  class="table"><t
       <tr>
         <th>ip</th>
         <th>country</th>
+        <th>time</th>
       </tr>
     </thead><tbody>';
 foreach ($result as $value){
     echo "<tr>
         <td>".$value['ip']."</td>
         <td>".$value['country']."</td>
+        <td>".$value['time']."</td>
       </tr>";
 }
 echo '</tbody></table></div>';
