@@ -22,16 +22,7 @@ $sql = "INSERT INTO countryip_stat (`ip`, `country`) VALUES ('".$ip."', '".$coun
 $statement = $conn->prepare($sql);
 $statement->execute();
 
-//echo '<h1 style="text-align: center; font-size: 500%; padding-top: 10%">Your ip is - '.$ip.'</h1>';
-//echo '<h1 style="text-align: center; font-size: 500%">Your country - ';
-//echo $country;
-//echo '</h1>';
-//
-//echo '<h5 style="position: absolute; bottom:0">try it with <a href="https://www.geoscreenshot.com">https://www.geoscreenshot.com</a></h5>';
-//echo '<h4 style="position: absolute; bottom:0; right: 10px"><a href="stat.php">Website Visit Stat</a></h4>';
-
 //http://dev.maxmind.com/minfraud/
-
 ?>
 <h1 style="text-align: center; font-size: 500%; padding-top: 10%">Your ip is - <?=$ip?></h1>
 <h1 style="text-align: center; font-size: 500%">Your country - <?=$country?></h1>
