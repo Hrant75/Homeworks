@@ -28,7 +28,7 @@ foreach ($result as $value){
     echo "<tr>
         <td>".$value['ip']."</td>
         <td>".$value['country']."</td>
-        <td>".$value['time']."</td>
+        <td>".date("d-m-Y h:m:s", strtotime($value['time']))."</td>
       </tr>";
 }
 echo '</tbody></table></div>';
