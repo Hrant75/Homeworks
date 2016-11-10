@@ -7,7 +7,7 @@ if(isset($_GET['domain'])){
 define ('ABC', "abcdefghijklmnopqrstuvwxyz0123456789");
 define('DB_HOST', "localhost");
 define('DB_USER', "root");
-define('DB_PASSWORD', "ikarus");
+define('DB_PASSWORD', "datapass");
 define('DB_NAME', "aca");
 
 function QueryWhoisServer($whoisserver, $domain) {
@@ -68,11 +68,11 @@ function letters($length, $prefix='') {
     foreach(str_split(ABC) as $letter) {
         $word = $prefix . $letter;
 
-        $result = QueryWhoisServer("whois.amnic.net", $word.".am");
-        if ($result == "No match") {
+//        $result = QueryWhoisServer("whois.amnic.net", $word.".am");
+//        if ($result == "No match") {
             $stmt->bindValue(1, $word, PDO::PARAM_STR);
             $stmt->execute();
-        }
+//        }
         letters($length-1, $prefix . $letter);
     }
 }
